@@ -18,7 +18,8 @@ const routes: Routes = [{
 )},
 { path: 'games/update/:id', loadChildren: () => import('./views/pages/games-update-page/games-update-page.module').then(
   (m) => m.GamesUpdatePageModule
-)}
+)},
+{path: '**', redirectTo: 'games'}
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
