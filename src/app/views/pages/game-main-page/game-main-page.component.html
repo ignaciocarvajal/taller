@@ -1,1 +1,2 @@
-<p>game-main-page works!</p>
+<app-card-list [games]="games" (goDelete)="goDelete($event)" (goDetail)="goDetail($event)"
+    (goModify)="goModify($event)"></app-card-list>

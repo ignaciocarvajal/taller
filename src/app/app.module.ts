@@ -11,10 +11,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HeaderModule } from './views/ui-components/header/header.module';
 import { FooterModule } from './views/ui-components/footer/footer.module';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +27,7 @@ import { FooterModule } from './views/ui-components/footer/footer.module';
     GamesDetailPageModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
+    HttpClientModule,
     HeaderModule,
     FooterModule
   ],
